@@ -1,0 +1,284 @@
+/*  cSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+/* css  custom vaiables */
+
+
+/* utility classes */
+.heading-p{
+    font-size: 3.5rem;
+    padding: 12px;
+    font-family: 'Pangolin', cursive;
+    text-align: center;
+    
+}
+
+.heading-2{
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Pangolin', cursive;
+    text-align: center;
+    
+
+}
+
+.center{
+    display: block;
+    text-align: center;
+}
+.btn{
+
+    padding: 5px 15px;
+    border: 2px solid blue;
+    margin: 12px;
+    background-color: darkslateblue;
+    font-size: 1.3rem;
+    border-radius: 13px;
+    cursor: pointer;
+
+}
+
+
+/*  styling navigation bar panel */
+
+#navbar{
+
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+   
+
+}
+#navbar::before{
+    content: "";
+  
+   
+    
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.41;
+}
+
+/*  nav  : logo and image */
+
+#logo{
+    margin: 1px 1px;
+}
+#logo img{
+    margin: 1px 1px;
+    height: 100px;
+}
+
+
+
+/* nav: list styleing */
+#navbar ul{
+    display: flex;/*  to male li horizontal*/
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 2 rem;
+    
+}
+#navbar ul li a{
+
+
+    display: block; /*  deaflut is inline to give width make it block*/
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Pangolin', cursive;
+}
+
+#navbar ul li a:hover{
+
+
+   
+    background-color: white;
+    color: rgb(15, 9, 9);
+    text-decoration: none;
+}
+
+
+
+/* home section styling */
+#home1{
+
+    display: flex;
+    flex-direction: column;
+    padding: 5px 300px;
+    justify-content: center;/*for x*/
+    align-items: center;
+    height: 550px;
+    
+    
+
+}
+
+#home1::before{
+    content: "";  
+  
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../images/xyz.jpg') no-repeat
+    center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.46;
+}
+
+#home1 h1{
+
+    text-align: center;
+    color: white;
+    
+
+}
+#home1 p{
+    text-align: center;
+    /* color: white; */
+    font-size: 2rem;
+}
+
+
+
+/* services section styling */
+
+#services{
+    margin: 34px;
+    display: flex;
+    /* background-color: teal; */
+
+}
+
+
+#services .serv{
+    border: 2px solid black;
+    margin: 20px 20px;
+    padding: 10px 10px;
+    background-color: rgb(246 234 245);
+    border-radius: 10px;
+}
+
+
+#services .serv img {
+
+    display: block;
+    
+    width: 350px;
+    height: 200px;
+    margin: auto;
+}
+
+#services .serv p{
+
+    font-size: 1rem;
+}
+
+
+
+/* locations */
+
+#clients{
+    height: 600px;
+    position: relative;
+    padding: 1px 1px;
+  
+  
+
+
+}
+
+#clients ::before{
+    content: "";
+    position: absolute;
+    top: 0px;left: 0px;
+    background: url('../images/xyz.jpg') no-repeat center center/cover;
+ 
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.04;
+}
+#clients h1{
+    padding: 100px 0px;
+}
+
+
+#clients #local{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+
+
+#clients  #local .loc{
+    padding: 30px 10px;
+
+}
+
+
+
+.loc img{
+
+    width: 200px;
+    height: 100px;
+}
+
+
+
+/* contact */
+#contact{
+    position: relative;
+    height: 600px;
+    
+}
+#contact #contactbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 200px 0px;
+    margin: 10px 0px;
+}
+#contact ::before{
+    content: "";
+    position: absolute;
+    top: 0px;left: 0px;
+    background: url('../images/ser5.jpg') no-repeat center center/cover;
+ 
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.15;
+}
+
+
+#contactbox p{
+    color: teal;
+}
+/* footer */
+footer{
+    background: black;
+    color: white;
+    padding: 15px 0px;
+    margin: 2px 0px;
+}

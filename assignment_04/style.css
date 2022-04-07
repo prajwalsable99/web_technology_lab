@@ -1,0 +1,36 @@
+body,html{
+
+    margin: 25px;
+}
+
+input[type="button"]{
+
+
+    border: none;
+    width: 100%;
+    outline: none;
+
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #b7ceec;
+
+}
+input[type="text"]{
+
+    padding-left: 10px;
+    background-color: #f7aaf6;
+    box-shadow: 6px 5px 6px 2px gray;
+}
+
+.outer1{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+
+    padding: 5px;
+    margin: 5px;
+    /* border: 2px solid black; */
+
+}

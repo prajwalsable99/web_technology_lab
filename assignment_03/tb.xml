@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Rule.xsl" ?>
+<!-- <?xml-stylesheet type="text/css" href="style.css"?> -->
+<emp>
+    <e>
+        <id>101</id>
+        <name>Yashraj Wani</name>
+        <role>HR</role>
+        <salary>1000000</salary>
+    </e>
+    <e>
+        <id>202</id>
+        <name>Ashish  Dongare</name>
+        <role>Developer</role>
+        <salary>500000</salary>
+    </e>
+    <e>
+        <id>303</id>
+        <name>Atharva Mohite</name>
+        <role>Tester</role>
+        <salary>700000</salary>
+    </e>
+</emp>

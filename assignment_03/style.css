@@ -1,0 +1,22 @@
+emp {
+    font-size: 80%;
+    margin: 0.5em;
+    font-family: Verdana;
+    display: block;
+}
+
+e {
+    display: block;
+    border: 1px solid silver;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: whitesmoke;
+}
+
+
+
+id,name,role,salary {
+    display: block;
+    text-align: center;
+}
+
