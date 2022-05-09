@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th , td  
+{
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+ 
+}
+table tr:nth-child(odd) 
+{
+  background-color: #f1f1f1;  
+}
+table tr:nth-child(even) 
+{
+  background-color: #ffffff;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="courseCtrl"> 
+<center><h3><font color="red"> {{welcome}}</font></h1>
+<table>
+  <tr>
+    <th>Qualification</th>
+    <th>Course</th>
+    <th>Duration</th>
+  </tr>
+  <tr ng-repeat="x in names">
+    <td>{{ x.qual }}</td>
+    <td>{{ x.course }}</td>
+    <td>{{ x.duration }}</td>
+  </tr>
+</table>
+
+</div>
+</center> 
+<script>
+var app = angular.module('myApp', []);
+app.controller('courseCtrl', function($scope, $http) 
+     {
+	 $scope.welcome = "Welcome in Course Counceling Website";
+       $http.get("course.php")
+      .then(function (response) 
+           {$scope.names = response.data.records;});
+     });
+</script>
+</body>
+</html>
